@@ -67,7 +67,8 @@ p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
 - Übernahme der ASCII Koeffizientenvektor Datei (a) (nwti.txt);
 - Ausgabe der ASCII Funktionsmatrix Datei (F) (nwtp.txt).
 
-
+## References
+Meyberg, K., & Vachenauer, P. (2001). Integration. In: *Höhere Mathematik 1*. Springer-Lehrbuch. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-56654-7_4
 
 
 
