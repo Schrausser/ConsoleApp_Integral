@@ -2,8 +2,14 @@
 Console applications for integral and interpolation (German):
 ## ROMI
 
-Approximiert (a) Flächen- oder (b) Kurven-Integrale I[a,b]f(x)dx mittels Romberg Methode. 
-Ggf. Dateiausgabe nach "romi.txt" von Funkionsmatrix (F)=(x|y) bei x=(x+d)/2, y=I[a,b]f(x)dx.
+Approximiert (a) Flächen- oder (b) Kurven-Integrale 
+
+    I[a,b]f(x)dx 
+
+mittels Romberg Methode. 
+Ggf. Dateiausgabe nach "romi.txt" von Funkionsmatrix 
+
+    (F)=(x|y) bei x=(x+d)/2, y=I[a,b]f(x)dx.
 
 - Ausführung von ROMI.bat:
 - Definition von f(x) in ROMI.h;
@@ -22,11 +28,9 @@ Approximiert das Integral I[a,b]f(x)dx mittels Romberg-Extrapolation
 
 ## KUSI 
 
-Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix (A)=(b|c|d) sowie s(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y),
+Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix (A)=(b|c|d) sowie s(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y), wobei
 
-wobei
-
-si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+    si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
 
 - Übernahme einer ASCII Funktionsmatrix Datei (F);
 - Ausgabe der ASCII Koeffizientenmatrix Datei (A) (KUSI.txt);
@@ -34,11 +38,9 @@ si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1.
 
 ## KUSF 
 
-Kubische Spline Funktion: Berechnung einer Funktionsmatrix (S)=(x|s(x)) zu Koeffizientenmatrix (A)=(b|c|d),
+Kubische Spline Funktion: Berechnung einer Funktionsmatrix (S)=(x|s(x)) zu Koeffizientenmatrix (A)=(b|c|d), wobei
 
-wobei
-
-si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+    si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
 
 - Übernahme einer ASCII Funktionsmatrix Datei (F);
 - Übernahme der ASCII Koeffizientenmatrix Datei (A) (KUSI.txt);
@@ -46,11 +48,9 @@ si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1.
 
 ## NWTI 
 
-Newton Interpolation: Berechnung des Koeffizientenvektors (a) sowie p(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y),
+Newton Interpolation: Berechnung des Koeffizientenvektors (a) sowie p(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y), wobei
 
-wobei
-
-p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n). 
+    p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n). 
 
 - Übernahme einer ASCII Funktionsmatrix Datei (F);
 - Ausgabe einer ASCII Koeffizientenvektor Datei (a) (nwti.txt);
@@ -58,11 +58,9 @@ p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
 
 ## NWTP
 
-Newton Interpolations Polynom: Berechnung einer Funktionsmatrix (F)=(x|p(x)) zu Koeffizientenvektor (a),
+Newton Interpolations Polynom: Berechnung einer Funktionsmatrix (F)=(x|p(x)) zu Koeffizientenvektor (a), wobei
 
-wobei
-
-p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
+    p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
 
 - Übernahme der ASCII Koeffizientenvektor Datei (a) (nwti.txt);
 - Ausgabe der ASCII Funktionsmatrix Datei (F) (nwtp.txt).
