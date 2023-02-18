@@ -1,0 +1,26 @@
+NWTP von Dietmar SCHRAUSSER 2011
+
+Allgemein
+---------
+NWTP Newton Interpolations Polynom: Berechnung einer Funktionsmatrix (F)=(x|p(x)) zu Koeffizientenvektor (a),
+
+wobei
+
+p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
+
+
+Arbeitsweise
+------------
+# Übernahme der ASCII Koeffizientenvektor Datei (a) (nwti.txt);
+# Ausgabe der ASCII Funktionsmatrix Datei (F) (nwtp.txt).
+
+
+Handhabung
+----------
+NWTP [a] [b] [d]
+[a] ......... (x) Minimum
+[b] ......... (x) Maximum
+[d] ......... Intervall d
+
+bsp: NWTP 1 10 0.1
+

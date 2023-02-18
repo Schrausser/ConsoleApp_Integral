@@ -1,0 +1,26 @@
+KUSI von Dietmar SCHRAUSSER 2011
+
+Allgemein
+---------
+KUSI Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix (A)=(b|c|d) sowie s(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y),
+
+wobei
+
+si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+
+
+Arbeitsweise
+------------
+# übernahme einer ASCII Funktionsmatrix Datei (F);
+# Ausgabe der ASCII Koeffizientenmatrix Datei (A) (KUSI.txt);
+# Berechnung von s(x) über die Interpolations-Funktion.
+
+
+Handhabung
+----------
+KUSI [f] [x]
+[f] ......... Funktionsmatrix Datei (F)
+[x] ......... Funktionswert x
+
+bsp: KUSI in.txt 0.5
+

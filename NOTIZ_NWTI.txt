@@ -1,0 +1,26 @@
+NWTI von Dietmar SCHRAUSSER 2011
+
+Allgemein
+---------
+NWTI Newton Interpolation: Berechnung des Koeffizientenvektors (a) sowie p(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y),
+
+wobei
+
+p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n). 
+
+
+Arbeitsweise
+------------
+# übernahme einer ASCII Funktionsmatrix Datei (F);
+# Ausgabe einer ASCII Koeffizientenvektor Datei (a) (nwti.txt);
+# Berechnung von p(x) über das Interpolations-Polynom.
+
+
+Handhabung
+----------
+NWTI [f] [x]
+[f] ......... Funktionsmatrix Datei (F)
+[x] ......... Funktionswert x
+
+bsp: NWTI in.txt 3
+

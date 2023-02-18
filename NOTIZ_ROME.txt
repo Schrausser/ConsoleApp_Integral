@@ -1,0 +1,25 @@
+ROME von Dietmar SCHRAUSSER 2011
+
+Allgemein
+---------
+ROME approximiert das Integral I[a,b]f(x)dx mittels Romberg-Extrapolation 
+(ROMBERG Integration nach Meyberg und Vachenauer, 2001, S 209).
+
+Arbeitsweise
+------------
+# Ausführung von ROME.bat:
+  - Definition von f(x) in ROME.h;
+  - Compilieren von ROME.c; 
+# Ausführung von ROME.exe.
+
+Handhabung
+----------
+ROME [a] [b]
+[a] ....... Integrations Minimum a
+[b] ....... Integrations Maximum b
+ 
+bsp:	ROME.bat
+	ROME 1 10
+	ROME -14 1
+
+

@@ -1,0 +1,28 @@
+KUSF von Dietmar SCHRAUSSER 2011
+
+Allgemein
+---------
+KUSF Kubische Spline Funktion: Berechnung einer Funktionsmatrix (S)=(x|s(x)) zu Koeffizientenmatrix (A)=(b|c|d),
+
+wobei
+
+si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+
+
+Arbeitsweise
+------------
+# übernahme einer ASCII Funktionsmatrix Datei (F);
+# Übernahme der ASCII Koeffizientenmatrix Datei (A) (KUSI.txt);
+# Ausgabe der ASCII Funktionsmatrix Datei (S) (KUSF.txt).
+
+
+Handhabung
+----------
+KUSF [f] [a] [b] [d] 
+[f] ......... Funktionsmatrix Datei (F)
+[a] ......... (x) Minimum
+[b] ......... (x) Maximum
+[d] ......... Intervall d
+
+bsp: KUSF in.txt 1 10 0.1
+
