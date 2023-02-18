@@ -4,12 +4,12 @@ Console applications for integral and interpolation (German):
 
 Approximiert (a) Flächen- oder (b) Kurven-Integrale 
 
-    I[a,b]f(x)dx 
+    ∫[a,b]f(x)dx 
 
 mittels Romberg Methode. 
 Ggf. Dateiausgabe nach "romi.txt" von Funkionsmatrix 
 
-    (F)=(x|y) bei x=(x+d)/2, y=I[a,b]f(x)dx.
+    (F)=(x|y) bei x=(x+d)/2, y=∫[a,b]f(x)dx.
 
 - Ausführung von ROMI.bat:
 - Definition von f(x) in ROMI.h;
@@ -18,7 +18,7 @@ Ggf. Dateiausgabe nach "romi.txt" von Funkionsmatrix
 
 ## ROME 
 
-Approximiert das Integral I[a,b]f(x)dx mittels Romberg-Extrapolation 
+Approximiert das Integral ∫[a,b]f(x)dx mittels Romberg-Extrapolation 
 (ROMBERG Integration nach Meyberg und Vachenauer, 2001, S 209).
 
 - Ausführung von ROME.bat:
