@@ -1,0 +1,77 @@
+<html> 
+<head>
+<meta charset="utf-8">
+ 
+<title></title>
+
+</head> 
+<body>
+
+<style>html { background:white; color:black; word-wrap: break-word; margin:5px; line-height:150%; } ul{ padding-left:1.5em; } strong, em{color:#b58900} code, pre, blockquote { background:#eee; color:black; tab-size: 1; } h1,h2,h3,h4,h5,h6{ line-height:150%; } h1 { color:#268bd2; } h2,h3,h4,h5,h6 { color:#268bd2; } a { color:#268bd2; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; text-decoration:none; } :active, :focus { outline: none; -moz-outline-style: none; } pre { padding: 10px 10px 10px 10px; font-family: monospace; font-size: 95%; line-height: 140%; white-space: pre; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; border:1px solid #eee; border-radius:10px; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } code { font-family: monospace; font-size: 95%; line-height: 140%; white-space: pre; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; } table{ width:100%; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } table, th, td { border-collapse:collapse; padding:10px; border:1px solid #ccc; vertical-align: top; } tbody tr:nth-child(odd) { background:#eee; } noheader th {display:none;} blockquote { border-left: 10px solid #ccc; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } blockquote {margin:0px 0px 0px 10px;padding:0px;padding-left:1em;} img { width: 80%; display: block; border: solid #ccc 1px; height: auto; margin-left: auto; margin-right: auto; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } center p{text-align:center;} left p{text-align:left;} right p{text-align:right;} img[title=right]{width:40%; float:right; padding: 1px;margin: 10px;} img[title=left]{width:40%; float:left; padding: 1px;margin: 10px;} kbd { padding:0.1em 0.6em; border:1px solid #ccc; font-size:11px; font-family:arial,helvetica,sans-serif; background-color:#f7f7f7; color:#333; border-radius:3px; display:inline-block; margin:0 0.1em; white-space:nowrap; }</style>
+<h1 id="consoleapp_integral">ConsoleApp_Integral</h1>
+<p>Console applications for integral and interpolation (German):</p>
+<h2 id="romi">ROMI</h2>
+<p>Approximiert (a) Flächen- oder (b) Kurven-Integrale</p>
+<pre><code>∫[a,b]f(x)dx 
+</code></pre>
+<p>mittels Romberg Methode.
+Ggf. Dateiausgabe nach &quot;romi.txt&quot; von Funkionsmatrix</p>
+<pre><code>(F)=(x|y) bei x=(x+d)/2, y=∫[a,b]f(x)dx.
+</code></pre>
+<ul>
+<li>Ausführung von ROMI.bat:</li>
+<li>Definition von f(x) in ROMI.h;</li>
+<li>Compilieren von ROMI.c;</li>
+<li>Ausführung von ROMI.exe.</li>
+</ul>
+<h2 id="rome">ROME</h2>
+<p>Approximiert das Integral ∫[a,b]f(x)dx mittels Romberg-Extrapolation
+(ROMBERG Integration nach Meyberg und Vachenauer, 2001, S 209).</p>
+<ul>
+<li>Ausführung von ROME.bat:</li>
+<li>Definition von f(x) in ROME.h;</li>
+<li>Compilieren von ROME.c;</li>
+<li>Ausführung von ROME.exe.</li>
+</ul>
+<h2 id="kusi">KUSI</h2>
+<p>Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix (A)=(b|c|d) sowie s(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y), wobei</p>
+<pre><code>si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+</code></pre>
+<ul>
+<li>Übernahme einer ASCII Funktionsmatrix Datei (F);</li>
+<li>Ausgabe der ASCII Koeffizientenmatrix Datei (A) (KUSI.txt);</li>
+<li>Berechnung von s(x) über die Interpolations-Funktion.</li>
+</ul>
+<h2 id="kusf">KUSF</h2>
+<p>Kubische Spline Funktion: Berechnung einer Funktionsmatrix (S)=(x|s(x)) zu Koeffizientenmatrix (A)=(b|c|d), wobei</p>
+<pre><code>si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+</code></pre>
+<ul>
+<li>Übernahme einer ASCII Funktionsmatrix Datei (F);</li>
+<li>Übernahme der ASCII Koeffizientenmatrix Datei (A) (KUSI.txt);</li>
+<li>Ausgabe der ASCII Funktionsmatrix Datei (S) (KUSF.txt).</li>
+</ul>
+<h2 id="nwti">NWTI</h2>
+<p>Newton Interpolation: Berechnung des Koeffizientenvektors (a) sowie p(x) zu einer (empirischen) Funktionsmatrix (F)=(x|y), wobei</p>
+<pre><code>p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n). 
+</code></pre>
+<ul>
+<li>Übernahme einer ASCII Funktionsmatrix Datei (F);</li>
+<li>Ausgabe einer ASCII Koeffizientenvektor Datei (a) (nwti.txt);</li>
+<li>Berechnung von p(x) über das Interpolations-Polynom.</li>
+</ul>
+<h2 id="nwtp">NWTP</h2>
+<p>Newton Interpolations Polynom: Berechnung einer Funktionsmatrix (F)=(x|p(x)) zu Koeffizientenvektor (a), wobei</p>
+<pre><code>p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
+</code></pre>
+<ul>
+<li>Übernahme der ASCII Koeffizientenvektor Datei (a) (nwti.txt);</li>
+<li>Ausgabe der ASCII Funktionsmatrix Datei (F) (nwtp.txt).</li>
+</ul>
+<h2 id="references">References</h2>
+<p>Meyberg, K., &amp; Vachenauer, P. (2001). Integration. In: <em>Höhere Mathematik 1</em>. Springer-Lehrbuch. Springer, Berlin, Heidelberg. <a href="https://doi.org/10.1007/978-3-642-56654-7_4">https://doi.org/10.1007/978-3-642-56654-7_4</a></p>
+
+
+</body>
+</html>
+    
