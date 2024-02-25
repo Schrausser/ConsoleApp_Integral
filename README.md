@@ -40,11 +40,17 @@ Approximiert das Integral $\int\limits_a^bf(x)dx$ mittels *Romberg-Extrapolation
 - Compilieren von `ROME.c`; 
 - Ausführung von `ROME.exe`.
 
+Handhabung
+~~~
+ROME [a] [b]
+[a] ....... Integrations Minimum a
+[b] ....... Integrations Maximum b
+~~~
 ## KUSI 
 
 Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix $(A)=(b|c|d)$ sowie $s(x)$ zu einer (empirischen) Funktionsmatrix $(F)=(x|y)$, wobei
 
-    si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+$$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1$$. 
 
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Ausgabe der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
