@@ -4,7 +4,7 @@ Console applications for *integral* and *interpolation* (German):
 
 Approximiert (a) Flächen- oder (b) Kurven-Integrale 
 
-    ∫[a,b]f(x)dx 
+$$\int\limits_a^bf(x)dx$$
 
 mittels Romberg Methode, dabei 
 ggf. Dateiausgabe nach `romi.txt` von Funkionsmatrix 
@@ -19,7 +19,7 @@ ggf. Dateiausgabe nach `romi.txt` von Funkionsmatrix
 ## ROME 
 
 Approximiert das Integral ∫[a,b]f(x)dx mittels Romberg-Extrapolation 
-(ROMBERG Integration nach Meyberg und Vachenauer, 2001, S. 209).
+(ROMBERG Integration nach Meyberg & Vachenauer, 2001, S. 209).
 
 - Ausführung von `ROME.bat`:
 - Definition von $f(x)$ in `ROME.h`;
@@ -66,4 +66,4 @@ Newton Interpolations Polynom: Berechnung einer Funktionsmatrix $(F)=(x|p(x))$ z
 - Ausgabe der ASCII Funktionsmatrix Datei $(F)$ (`nwtp.txt`).
 
 ## References
-Meyberg, K., & Vachenauer, P. (2001). Integration. In: *Höhere Mathematik 1*. Springer-Lehrbuch. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-56654-7_4
+Meyberg, K., & Vachenauer, P. (2001). Integration. In *Höhere Mathematik 1*. Springer-Lehrbuch. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-56654-7_4
