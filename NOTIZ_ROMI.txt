@@ -2,15 +2,15 @@ ROMI von Dietmar SCHRAUSSER 2011
 
 Allgemein
 ---------
-ROMI approximiert (a) Flächen- oder (b) Kurven-Integrale I[a,b]f(x)dx mittels Romberg Methode. 
+ROMI approximiert (a) FlÃ¤chen- oder (b) Kurven-Integrale I[a,b]f(x)dx mittels Romberg Methode. 
 Ggf. Dateiausgabe nach "romi.txt" von Funkionsmatrix (F)=(x|y) bei x=(x+d)/2, y=I[a,b]f(x)dx.
 
 Arbeitsweise
 ------------
-# Ausführung von ROMI.bat:
+# AusfÃ¼hrung von ROMI.bat:
   - Definition von f(x) in ROMI.h;
   - Compilieren von ROMI.c; 
-# Ausführung von ROMI.exe.
+# AusfÃ¼hrung von ROMI.exe.
 
 Handhabung
 ----------
