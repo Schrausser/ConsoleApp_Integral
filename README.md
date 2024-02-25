@@ -67,7 +67,7 @@ KUSI [f] [x]
 
 Kubische Spline Funktion: Berechnung einer Funktionsmatrix $(S)=(x|s(x))$ zu Koeffizientenmatrix $(A)=(b|c|d)$, wobei
 
-    si(x)= yi + bi(x-xi) + ci(x-xi)^2 + di(x-xi)^3; i= 0,1,...,n-1. 
+$$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1$$. 
 
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Übernahme der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
@@ -77,7 +77,7 @@ Kubische Spline Funktion: Berechnung einer Funktionsmatrix $(S)=(x|s(x))$ zu Koe
 
 Newton Interpolation: Berechnung des Koeffizientenvektors $(a)$ sowie $p(x)$ zu einer (empirischen) Funktionsmatrix $(F)=(x|y)$, wobei
 
-    p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n). 
+$$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n)$$. 
 
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Ausgabe einer ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
@@ -87,7 +87,7 @@ Newton Interpolation: Berechnung des Koeffizientenvektors $(a)$ sowie $p(x)$ zu 
 
 Newton Interpolations Polynom: Berechnung einer Funktionsmatrix $(F)=(x|p(x))$ zu Koeffizientenvektor $(a)$, wobei
 
-    p(x)= a0 + a1(x-1) + a2(x-1)(x-2) ... an(x-1)(x-2) ... (x-n).
+$$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n)$$.
 
 - Übernahme der ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
 - Ausgabe der ASCII Funktionsmatrix Datei $(F)$ (`nwtp.txt`).
