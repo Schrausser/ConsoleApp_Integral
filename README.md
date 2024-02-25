@@ -9,7 +9,11 @@ $$\int\limits_a^bf(x)dx$$
 mittels Romberg Methode, dabei 
 ggf. Dateiausgabe nach `romi.txt` von Funkionsmatrix 
 
-    (F)=(x|y) bei x=(x+d)/2, y=∫[a,b]f(x)dx.
+$$(F)=(x|y)$$
+
+bei 
+
+$$x=\frac{x+d}{2},y=\int\limits_a^b{f(x)dx}$$.
 
 - Ausführung von `ROMI.bat`:
 - Definition von $f(x)$ in `ROMI.h`;
