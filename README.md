@@ -20,9 +20,19 @@ $$x=\frac{x+d}{2},y=\int\limits_a^b{f(x)dx}$$.
  - Compilieren von `ROMI.c`; 
 - Ausführung von `ROMI.exe`.
 
+Handhabung
+~~~
+ROMI [a] [b] [d] [m] [F]
+[a] ..... Integrations Minimum a
+[b] ......Integrations Maximum b
+[d] ......Delta d
+[m] ......Modus: (0)Flaechen.I (1)Kurven.I
+[F] ......Funktionsmatrix: (0)keine (1)romi.txt
+~~~
+
 ## ROME 
 
-Approximiert das Integral ∫[a,b]f(x)dx mittels Romberg-Extrapolation 
+Approximiert das Integral $\int\limits_a^bf(x)dx$ mittels *Romberg-Extrapolation* 
 (ROMBERG Integration nach Meyberg & Vachenauer, 2001, S. 209).
 
 - Ausführung von `ROME.bat`:
