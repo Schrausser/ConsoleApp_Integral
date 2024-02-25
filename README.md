@@ -13,7 +13,7 @@ $$(F)=(x|y),$$
 
 bei 
 
-$$x=\frac{x+d}{2},y=\int\limits_a^b{f(x)dx}$$.
+$$x=\frac{x+d}{2},y=\int\limits_a^b{f(x)dx}.$$
 
 - Ausführung von `ROMI.bat`:
 - Definition von $f(x)$ in `ROMI.h`;
@@ -50,7 +50,7 @@ ROME [a] [b]
 
 Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix $(A)=(b|c|d)$ sowie $s(x)$ zu einer (empirischen) Funktionsmatrix $(F)=(x|y)$, wobei
 
-$$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1$$. 
+$$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1.$$ 
 
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Ausgabe der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
@@ -67,7 +67,7 @@ KUSI [f] [x]
 
 Kubische Spline Funktion: Berechnung einer Funktionsmatrix $(S)=(x|s(x))$ zu Koeffizientenmatrix $(A)=(b|c|d)$, wobei
 
-$$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1$$. 
+$$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1.$$
 
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Übernahme der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
@@ -86,7 +86,7 @@ KUSF [f] [a] [b] [d]
 
 Newton Interpolation: Berechnung des Koeffizientenvektors $(a)$ sowie $p(x)$ zu einer (empirischen) Funktionsmatrix $(F)=(x|y)$, wobei
 
-$$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n)$$. 
+$$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n).$$
 
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Ausgabe einer ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
@@ -103,7 +103,7 @@ NWTI [f] [x]
 
 Newton Interpolations Polynom: Berechnung einer Funktionsmatrix $(F)=(x|p(x))$ zu Koeffizientenvektor $(a)$, wobei
 
-$$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n)$$.
+$$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n).$$
 
 - Übernahme der ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
 - Ausgabe der ASCII Funktionsmatrix Datei $(F)$ (`nwtp.txt`).
