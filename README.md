@@ -99,5 +99,13 @@ $$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n)$$.
 - Übernahme der ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
 - Ausgabe der ASCII Funktionsmatrix Datei $(F)$ (`nwtp.txt`).
 
+Handhabung
+~~~
+NWTP [a] [b] [d]
+[a] ......... (x) Minimum
+[b] ......... (x) Maximum
+[d] ......... Intervall d
+~~~
+
 ## References
 Meyberg, K., & Vachenauer, P. (2001). Integration. In *Höhere Mathematik 1*. Springer-Lehrbuch. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-56654-7_4
