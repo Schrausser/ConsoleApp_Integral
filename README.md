@@ -83,6 +83,13 @@ $$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n)$$.
 - Ausgabe einer ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
 - Berechnung von $p(x)$ über das Interpolations-Polynom.
 
+Handhabung
+~~~
+NWTI [f] [x]
+[f] ......... Funktionsmatrix Datei (F)
+[x] ......... Funktionswert x
+~~~
+
 ## NWTP
 
 Newton Interpolations Polynom: Berechnung einer Funktionsmatrix $(F)=(x|p(x))$ zu Koeffizientenvektor $(a)$, wobei
