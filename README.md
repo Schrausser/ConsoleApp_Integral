@@ -56,6 +56,13 @@ $$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1$$.
 - Ausgabe der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
 - Berechnung von $s(x)$ über die Interpolations-Funktion.
 
+Handhabung
+~~~
+KUSI [f] [x]
+[f] ......... Funktionsmatrix Datei (F)
+[x] ......... Funktionswert x
+~~~
+
 ## KUSF 
 
 Kubische Spline Funktion: Berechnung einer Funktionsmatrix $(S)=(x|s(x))$ zu Koeffizientenmatrix $(A)=(b|c|d)$, wobei
