@@ -9,7 +9,7 @@ $$\int\limits_a^bf(x)dx$$
 mittels Romberg Methode, dabei 
 ggf. Dateiausgabe nach `romi.txt` von Funkionsmatrix 
 
-$$(F)=(x|y)$$
+$$(F)=(x|y),$$
 
 bei 
 
@@ -72,6 +72,15 @@ $$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1$$.
 - Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
 - Übernahme der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
 - Ausgabe der ASCII Funktionsmatrix Datei $(S)$ (`KUSF.txt`).
+
+Handhabung
+~~~
+KUSF [f] [a] [b] [d] 
+[f] ......... Funktionsmatrix Datei (F)
+[a] ......... (x) Minimum
+[b] ......... (x) Maximum
+[d] ......... Intervall d
+~~~
 
 ## NWTI 
 
