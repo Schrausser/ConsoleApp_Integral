@@ -1,5 +1,5 @@
 # ConsoleApp_Integral
-Console applications for *integral* and *interpolation* (German):
+Console applications for *integral* and *interpolation* (German).
 ## ROMI
 
 Approximiert (a) Flächen- oder (b) Kurven-Integrale 
