@@ -48,13 +48,13 @@ ROME [a] [b]
 ~~~
 ## KUSI 
 
-Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix $(A)=(b|c|d)$ sowie $s(x)$ zu einer (empirischen) Funktionsmatrix $(F)=(x|y)$, wobei
+Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix $\mathbfit {A=(b|c|d)}$ sowie $\mathbfit {s(x)}$ zu einer (empirischen) Funktionsmatrix $\mathbfit {F=(x|y)}$, wobei
 
 $$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1.$$ 
 
-- Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
-- Ausgabe der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
-- Berechnung von $s(x)$ über die Interpolations-Funktion.
+- Übernahme einer ASCII Funktionsmatrix Datei $\mathbfit F$;
+- Ausgabe der ASCII Koeffizientenmatrix Datei $\mathbfit A$ (`KUSI.txt`);
+- Berechnung von $\mathbfit{s(x)}$ über die Interpolations-Funktion.
 
 Handhabung
 ~~~
@@ -65,13 +65,13 @@ KUSI [f] [x]
 
 ## KUSF 
 
-Kubische Spline Funktion: Berechnung einer Funktionsmatrix $(S)=(x|s(x))$ zu Koeffizientenmatrix $(A)=(b|c|d)$, wobei
+Kubische Spline Funktion: Berechnung einer Funktionsmatrix $\mathbfit {S=(x|s(x))}$ zu Koeffizientenmatrix $\mathbfit {A=(b|c|d)}$, wobei
 
 $$s_i(x)= y_i + b_i(x-x_i) + c_i(x-x_i)^2 + d_i(x-x_i)^3; i= 0,1,...,n-1.$$
 
-- Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
-- Übernahme der ASCII Koeffizientenmatrix Datei $(A)$ (`KUSI.txt`);
-- Ausgabe der ASCII Funktionsmatrix Datei $(S)$ (`KUSF.txt`).
+- Übernahme einer ASCII Funktionsmatrix Datei $\mathbfit F$;
+- Übernahme der ASCII Koeffizientenmatrix Datei $\mathbfit A$ (`KUSI.txt`);
+- Ausgabe der ASCII Funktionsmatrix Datei $\mathbfit S$ (`KUSF.txt`).
 
 Handhabung
 ~~~
@@ -84,12 +84,12 @@ KUSF [f] [a] [b] [d]
 
 ## NWTI 
 
-Newton Interpolation: Berechnung des Koeffizientenvektors $(a)$ sowie $p(x)$ zu einer (empirischen) Funktionsmatrix $(F)=(x|y)$, wobei
+Newton Interpolation: Berechnung des Koeffizientenvektors $\mathbfit a$ sowie $p(x)$ zu einer (empirischen) Funktionsmatrix $\mathbfit {F=(x|y)}$, wobei
 
 $$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n).$$
 
-- Übernahme einer ASCII Funktionsmatrix Datei $(F)$;
-- Ausgabe einer ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
+- Übernahme einer ASCII Funktionsmatrix Datei $\mathbfit F$;
+- Ausgabe einer ASCII Koeffizientenvektor Datei $\mathbfit a$ (`nwti.txt`);
 - Berechnung von $p(x)$ über das Interpolations-Polynom.
 
 Handhabung
@@ -101,12 +101,12 @@ NWTI [f] [x]
 
 ## NWTP
 
-Newton Interpolations Polynom: Berechnung einer Funktionsmatrix $(F)=(x|p(x))$ zu Koeffizientenvektor $(a)$, wobei
+Newton Interpolations Polynom: Berechnung einer Funktionsmatrix $\mathbfit {F=(x|p(x))}$ zu Koeffizientenvektor $\mathbfit a$, wobei
 
 $$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n).$$
 
-- Übernahme der ASCII Koeffizientenvektor Datei $(a)$ (`nwti.txt`);
-- Ausgabe der ASCII Funktionsmatrix Datei $(F)$ (`nwtp.txt`).
+- Übernahme der ASCII Koeffizientenvektor Datei $\mathbfit a$ (`nwti.txt`);
+- Ausgabe der ASCII Funktionsmatrix Datei $\mathbfit F$ (`nwtp.txt`).
 
 Handhabung
 ~~~
