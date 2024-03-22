@@ -9,7 +9,7 @@ $$\int\limits_a^bf(x)dx$$
 mittels Romberg Methode, dabei 
 ggf. Dateiausgabe nach `romi.txt` von Funkionsmatrix 
 
-$$(F)=(x|y),$$
+$$\mathbfit {F=(x|y)},$$
 
 bei 
 
