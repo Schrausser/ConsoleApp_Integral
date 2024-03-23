@@ -84,13 +84,13 @@ KUSF [f] [a] [b] [d]
 
 ## NWTI 
 
-Newton Interpolation: Berechnung des Koeffizientenvektors $\mathbfit a$ sowie $p(x)$ zu einer (empirischen) Funktionsmatrix $\mathbfit {F=(x|y)}$, wobei
+Newton Interpolation: Berechnung des Koeffizientenvektors $\mathbfit a$ sowie $\mathbfit{p(x)}$ zu einer (empirischen) Funktionsmatrix $\mathbfit {F=(x|y)}$, wobei
 
 $$p(x)= a_0 + a_1(x-1) + a_2(x-1)(x-2) ... a_n(x-1)(x-2) ... (x-n).$$
 
 - Übernahme einer ASCII Funktionsmatrix Datei $\mathbfit F$;
 - Ausgabe einer ASCII Koeffizientenvektor Datei $\mathbfit a$ (`nwti.txt`);
-- Berechnung von $p(x)$ über das Interpolations-Polynom.
+- Berechnung von $\mathbfit{p(x)}$ über das Interpolations-Polynom.
 
 Handhabung
 ~~~
