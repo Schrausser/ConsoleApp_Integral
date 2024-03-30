@@ -1,1 +1,115 @@
+<html> 
+<head>
+<meta charset="utf-8">
+ 
+<title></title>
 
+</head> 
+<body>
+
+<style></style>
+<h1 id="consoleapp_integral">ConsoleApp_Integral</h1>
+<p>Console applications for <em>integral</em> and <em>interpolation</em> (German).</p>
+<h2 id="romi">ROMI</h2>
+<p>Approximiert (a) Flächen- oder (b) Kurven-Integrale</p>
+<p>$$\int\limits_a^bf(x)dx$$</p>
+<p>mittels Romberg Methode, dabei
+ggf. Dateiausgabe nach <code>romi.txt</code> von Funkionsmatrix</p>
+<p><strong><em>F=(x|y)</em></strong>,</p>
+<p>bei</p>
+<p>$$x=\frac{x+d}{2},y=\int\limits_a^b{f(x)dx}.$$</p>
+<ul>
+<li>Ausführung von <code>ROMI.bat</code>:</li>
+<li>Definition von <em>f(x)</em> in <code>ROMI.h</code>;</li>
+<li>Compilieren von <code>ROMI.c</code>;</li>
+<li>Ausführung von <code>ROMI.exe</code>.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ROMI [a] [b] [d] [m] [F]
+[a] ..... Integrations Minimum a
+[b] ......Integrations Maximum b
+[d] ......Delta d
+[m] ......Modus: (0)Flaechen.I (1)Kurven.I
+[F] ......Funktionsmatrix: (0)keine (1)romi.txt
+</code></pre>
+<h2 id="rome">ROME</h2>
+<p>Approximiert das Integral über <em>f(x) dx</em> mittels <em>Romberg-Extrapolation</em>
+(ROMBERG Integration nach Meyberg &amp; Vachenauer, 2001, S. 209).</p>
+<ul>
+<li>Ausführung von <code>ROME.bat</code>:</li>
+<li>Definition von <em>f(x)</em> n <code>ROME.h</code>;</li>
+<li>Compilieren von <code>ROME.c</code>;</li>
+<li>Ausführung von <code>ROME.exe</code>.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ROME [a] [b]
+[a] ....... Integrations Minimum a
+[b] ....... Integrations Maximum b
+</code></pre>
+<h2 id="kusi">KUSI</h2>
+<p>Kubische Spline Interpolation: Berechnung der Koeffizientenmatrix <strong><em>A=(b|c|d)</em></strong> sowie <strong><em>s(x)</em></strong> zu einer (empirischen) Funktionsmatrix <strong><em>F=(x|y)</em></strong>, wobei</p>
+<p>$$s_i(x)= y_i + b_i⋅(x-x_i) + c_i⋅(x-x_i)^2 + d_i⋅(x-x_i)^3; i= 0,1,...,n-1.$$</p>
+<ul>
+<li>Übernahme einer ASCII Funktionsmatrix Datei <strong><em>F</em></strong>;</li>
+<li>Ausgabe der ASCII Koeffizientenmatrix Datei <strong><em>A</em></strong> (<code>KUSI.txt</code>);</li>
+<li>Berechnung von <strong><em>s(x)</em></strong> über die Interpolations-Funktion.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>KUSI [f] [x]
+[f] ......... Funktionsmatrix Datei (F)
+[x] ......... Funktionswert x
+</code></pre>
+<h2 id="kusf">KUSF</h2>
+<p>Kubische Spline Funktion: Berechnung einer Funktionsmatrix <strong><em>S=(x|s(x))</em></strong> zu Koeffizientenmatrix <strong><em>A=(b|c|d)</em></strong>, wobei</p>
+<p>$$s_i(x)= y_i + b_i⋅(x-x_i) + c_i⋅(x-x_i)^2 + d_i⋅(x-x_i)^3; i= 0,1,...,n-1.$$</p>
+<ul>
+<li>Übernahme einer ASCII Funktionsmatrix Datei <strong><em>F</em></strong>;</li>
+<li>Übernahme der ASCII Koeffizientenmatrix Datei <strong><em>A</em></strong> (<code>KUSI.txt</code>);</li>
+<li>Ausgabe der ASCII Funktionsmatrix Datei <strong><em>S</em></strong> (<code>KUSF.txt</code>).</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>KUSF [f] [a] [b] [d] 
+[f] ......... Funktionsmatrix Datei (F)
+[a] ......... (x) Minimum
+[b] ......... (x) Maximum
+[d] ......... Intervall d
+</code></pre>
+<h2 id="nwti">NWTI</h2>
+<p>Newton Interpolation: Berechnung des Koeffizientenvektors <strong><em>a</em></strong> sowie <strong><em>p(x)</em></strong> zu einer (empirischen) Funktionsmatrix <strong><em>F=(x|y)</em></strong>, wobei</p>
+<p>$$p(x)= a_0 + a_1⋅(x-1) + a_2⋅(x-1)⋅(x-2) ... a_n⋅(x-1)⋅(x-2)⋅ ... ⋅(x-n).$$</p>
+<ul>
+<li>Übernahme einer ASCII Funktionsmatrix Datei <strong><em>F</em></strong>;</li>
+<li>Ausgabe einer ASCII Koeffizientenvektor Datei <strong><em>a</em></strong> (<code>nwti.txt</code>);</li>
+<li>Berechnung von <strong><em>p(x)</em></strong> über das Interpolations-Polynom.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>NWTI [f] [x]
+[f] ......... Funktionsmatrix Datei (F)
+[x] ......... Funktionswert x
+</code></pre>
+<h2 id="nwtp">NWTP</h2>
+<p>Newton Interpolations Polynom: Berechnung einer Funktionsmatrix <strong><em>F=(x|p(x))</em></strong> zu Koeffizientenvektor <strong><em>a</em></strong>, wobei</p>
+<p>$$p(x)= a_0 + a_1⋅(x-1) + a_2⋅(x-1)⋅(x-2) ... a_n⋅(x-1)⋅(x-2)⋅ ... ⋅(x-n).$$</p>
+<ul>
+<li>Übernahme der ASCII Koeffizientenvektor Datei <strong><em>a</em></strong> (<code>nwti.txt</code>);</li>
+<li>Ausgabe der ASCII Funktionsmatrix Datei <strong><em>F</em></strong> (<code>nwtp.txt</code>).</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>NWTP [a] [b] [d]
+[a] ......... (x) Minimum
+[b] ......... (x) Maximum
+[d] ......... Intervall d
+</code></pre>
+<h2 id="references">References</h2>
+<p>Meyberg, K., &amp; Vachenauer, P. (2001). Integration. In <em>Höhere Mathematik 1</em>. Springer-Lehrbuch. Springer, Berlin, Heidelberg. <a href="https://doi.org/10.1007/978-3-642-56654-7_4">https://doi.org/10.1007/978-3-642-56654-7_4</a></p>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	tex2jax: {inlineMath: [['\\[','\\]'], ['\\(','\\)']]}
+	});
+</script>
+
+</body>
+</html>
