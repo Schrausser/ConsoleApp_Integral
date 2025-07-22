@@ -34,7 +34,7 @@ Handhabung
 ## ROME 
 
 Approximiert das Integral $\int\limits_a^bf(x)dx$ mittels *Romberg-Extrapolation* 
-(ROMBERG Integration nach Meyberg & Vachenauer, [2001](https://doi.org/10.1007/978-3-642-56654-7_4), S. 209).
+(ROMBERG Integration nach Meyberg und Vachenauer, [2001](https://doi.org/10.1007/978-3-642-56654-7_4), S. 209).
 
 - Ausführung von `ROME.bat`:
 - Definition von $f(x)$ in `ROME.h`;
